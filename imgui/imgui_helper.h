@@ -98,5 +98,7 @@ bool InitImGui(HWND hwnd, WNDCLASSEX wc)
     ImGui_ImplWin32_Init(hwnd);
     ImGui_ImplDX11_Init(g_pd3dDevice, g_pd3dDeviceContext);
 
+    io.IniFilename = nullptr;
+
     return true;
 }
